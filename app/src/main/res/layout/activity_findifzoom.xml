@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".ReadActivity"
+    android:id="@+id/relativeLayout1">
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:hint="username"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:id="@+id/usercount"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:hint="usercount"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请找寻画面中的四个文字，提示：缩小看整体颜色不和谐的地方"
+        android:textSize="18dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="50dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relat_layout"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="140dp"
+         >
+        <HorizontalScrollView
+            android:id="@+id/SCROLLER_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:fillViewport="true"
+            >
+            <ImageView
+                android:id="@+id/zoom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="matrix"
+                android:src="@drawable/zoom6"
+                android:layout_alignTop="@+id/relat_layout"
+                android:layout_toRightOf="@+id/usercount"
+                android:layout_toEndOf="@+id/usercount" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请问你看到的四个字是"
+        android:textSize="18dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/hmdif" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:id="@+id/submit"
+        android:textSize="15dp"
+        android:layout_alignBottom="@+id/hmdif"
+        android:layout_toRightOf="@+id/hmdif"
+        android:layout_toEndOf="@+id/hmdif" />
+
+
+</RelativeLayout>
+

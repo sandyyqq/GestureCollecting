@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">GestureColleting</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="time_tvi">时间</string>
+</resources>

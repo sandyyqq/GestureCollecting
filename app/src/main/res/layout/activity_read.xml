@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".ReadActivity"
+    android:id="@+id/relativeLayout1">
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:hint="username"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:id="@+id/usercount"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:hint="usercount"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        />
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scrollbars="vertical"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:fillViewport="true">
+        <TextView
+            android:id="@+id/textv"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:hint="null"
+            android:background="@color/readbg"
+            android:textSize="20dp"
+            />
+    </ScrollView>
+
+        <TextView
+            android:id="@+id/position"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:hint="null"
+            android:textSize="20dp"
+            android:layout_marginTop="410dp"
+            android:layout_marginLeft="20dp"
+             />
+
+        <Button
+            android:id="@+id/btnfinish"
+            android:layout_height="60dp"
+            android:layout_width="120dp"
+            android:layout_marginLeft="100dp"
+            android:text="完成"
+            android:textSize="20dp"
+            android:layout_marginTop="520dp"
+             />
+
+
+</RelativeLayout>
+
